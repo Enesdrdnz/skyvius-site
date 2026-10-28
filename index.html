@@ -1,0 +1,631 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src &#x27;self&#x27;; script-src &#x27;self&#x27; &#x27;sha256-0EKB9AIr78Lwev2j2Db+pbXCCdNrQwjNe8oNcvZqr8s=&#x27; https://www.youtube.com https://www.youtube-nocookie.com; script-src-attr &#x27;none&#x27;; style-src &#x27;self&#x27; &#x27;unsafe-inline&#x27;; font-src &#x27;self&#x27;; img-src &#x27;self&#x27; data: https://i.ytimg.com; connect-src &#x27;self&#x27; https://xwgowagywzozzeebmcyw.supabase.co https://www.youtube.com https://www.youtube-nocookie.com; frame-src https://www.youtube-nocookie.com https://www.youtube.com; media-src &#x27;self&#x27;; object-src &#x27;none&#x27;; base-uri &#x27;none&#x27;; form-action &#x27;self&#x27;">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Skyvius</title>
+<meta name="description" content="Skyvius, YTÜ Uzay ve Aviyonik Sistemler Kulübü çatısı altında İHA platformları için görüntü işleme tabanlı otonom sistemler geliştiren bir takım.">
+<meta name="theme-color" content="#06080b">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:url" content="https://akademi.skyvius.com.tr/">
+<meta property="og:title" content="Skyvius">
+<meta property="og:description" content="Görüntü işleme tabanlı otonom sistemler. TEKNOFEST 2026 Türkiye ikincisi.">
+<meta property="og:image" content="https://akademi.skyvius.com.tr/medya/karsilama-kare.jpg">
+<meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://akademi.skyvius.com.tr/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<style>
+@font-face{font-family:'Saira';font-style:normal;font-weight:300 800;font-stretch:50% 125%;font-display:swap;src:url(fontlar/saira-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+@font-face{font-family:'Saira';font-style:normal;font-weight:300 800;font-stretch:50% 125%;font-display:swap;src:url(fontlar/saira-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+@font-face{font-family:'Inter';font-style:normal;font-weight:400;font-display:swap;src:url(fontlar/inter-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+@font-face{font-family:'Inter';font-style:normal;font-weight:400;font-display:swap;src:url(fontlar/inter-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+@font-face{font-family:'Inter';font-style:normal;font-weight:500;font-display:swap;src:url(fontlar/inter-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+@font-face{font-family:'Inter';font-style:normal;font-weight:500;font-display:swap;src:url(fontlar/inter-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+@font-face{font-family:'Inter';font-style:normal;font-weight:600;font-display:swap;src:url(fontlar/inter-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+@font-face{font-family:'Inter';font-style:normal;font-weight:600;font-display:swap;src:url(fontlar/inter-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+@font-face{font-family:'Inter';font-style:normal;font-weight:700;font-display:swap;src:url(fontlar/inter-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+@font-face{font-family:'Inter';font-style:normal;font-weight:700;font-display:swap;src:url(fontlar/inter-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+:root{--bg:#06080b;--bg2:#0c1016;--card:#0f141b;--line:rgba(255,255,255,.1);--line2:rgba(255,255,255,.18);
+  --ink:#f2f4f7;--mut:#a5adb9;--silver:#b8bec8;--red:#e3121b;--r:16px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:'Inter',system-ui,sans-serif}
+/* yazı tipi akademiyle aynı: başlık, etiket ve düğmeler Saira, metin Inter */
+h1,h2,h3,h4,.tag,.b1,.b2,.b3,.nav nav a,.aw b,.badge,.facts dd,.road li,.stops b,.blab,.panel-h h3,.quote blockquote p,.more{font-family:'Saira',system-ui,sans-serif}
+img,video{display:block;max-width:100%}
+a{color:inherit}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+ul,ol{list-style:none}
+:focus-visible{outline:3px solid var(--red);outline-offset:3px}
+.w{max-width:1280px;margin:0 auto;padding:0 40px}
+.pg{display:none}
+body[data-p="home"] .pg-home,body[data-p="projeler"] .pg-proj{display:block}
+h1,h2,h3{font-stretch:112%;font-weight:600;letter-spacing:-.012em;line-height:1.1}
+h2{font-size:clamp(30px,3.3vw,48px)}
+p{color:var(--mut);font-size:18px;line-height:1.68}
+p+p{margin-top:16px}
+.lead{color:var(--ink);font-size:clamp(19px,1.7vw,23px);line-height:1.5}
+.sec{padding:144px 0 0}
+.rv{opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+.b1{display:inline-flex;align-items:center;min-height:52px;padding:0 30px;border-radius:999px;background:#fff;color:#050608;text-decoration:none;font-weight:700;font-size:16px;transition:background .2s}
+.b1:hover{background:#d5dae2}
+.b2{display:inline-flex;align-items:center;min-height:52px;padding:0 30px;border-radius:999px;border:1.5px solid rgba(255,255,255,.4);text-decoration:none;font-weight:600;font-size:16px;transition:border-color .2s,background .2s}
+.b2:hover{border-color:#fff;background:rgba(255,255,255,.05)}
+.btns{display:flex;gap:14px;flex-wrap:wrap}
+/* Akademi: renk değişmeden kenarında dönen parıltı */
+@property --a{syntax:'<angle>';inherits:false;initial-value:160deg}
+@keyframes spin{to{--a:520deg}}
+.b3{position:relative;isolation:isolate;display:inline-flex;align-items:center;gap:10px;min-height:52px;padding:0 30px 0 24px;border-radius:999px;text-decoration:none;font-weight:700;font-size:16px;color:#fff;background:rgba(255,255,255,.1);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);transition:background .2s}
+.b3:hover{background:rgba(255,255,255,.16)}
+.b3 svg{width:20px;height:20px;flex:none}
+.b3::before{content:"";position:absolute;inset:0;border-radius:inherit;padding:2px;
+  background:conic-gradient(from var(--a),rgba(255,255,255,.5) 0 45%,#fff 62%,var(--red) 78%,rgba(255,255,255,.5) 95%);
+  -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;
+  animation:spin 4.5s linear infinite}
+.b3::after{content:"";position:absolute;inset:-7px;border-radius:inherit;z-index:-1;filter:blur(14px);opacity:.95;
+  background:conic-gradient(from var(--a),rgba(255,255,255,.08) 0 45%,rgba(255,255,255,.45) 62%,rgba(227,18,27,.8) 78%,rgba(255,255,255,.08) 95%);
+  animation:spin 4.5s linear infinite}
+.nav nav a.nav-ak{padding:9px 16px;margin:3px -4px;border-radius:999px;border:1px solid rgba(255,255,255,.32);color:#fff}
+.nav nav a.nav-ak:hover{border-color:#fff}
+.badge{display:inline-flex;align-items:center;gap:8px;padding:7px 14px 7px 10px;border-radius:999px;border:1px solid var(--line2);font-size:14px;font-weight:600;color:var(--ink);background:rgba(255,255,255,.04)}
+.badge svg{width:18px;height:18px;color:var(--silver)}
+
+/* üst menü */
+.nav{position:fixed;top:0;left:0;right:0;z-index:20;transition:background .3s,border-color .3s;border-bottom:1px solid transparent}
+.nav .w{display:flex;align-items:center;height:80px;max-width:none}
+.nav-logo{opacity:0;pointer-events:none;transition:opacity .3s}
+.nav-logo img{height:20px;width:auto}
+.nav nav{display:flex;gap:34px;margin-left:auto}
+.nav nav a{font-size:15px;font-weight:500;text-decoration:none;color:rgba(255,255,255,.82);padding:12px 0;transition:color .2s}
+.nav nav a:hover,.nav nav a[aria-current]{color:#fff}
+.nav.solid{background:rgba(6,8,11,.78);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-bottom-color:var(--line)}
+.nav.solid .nav-logo{opacity:1;pointer-events:auto}
+.navbtn{display:none;width:44px;height:44px;place-items:center;margin-left:auto}
+.navbtn svg{width:22px;height:22px}
+
+/* karşılama */
+.hero{position:relative;height:var(--hh,100svh);min-height:600px;overflow:hidden;background:#0b0f16;isolation:isolate}
+.hv{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero .bg{filter:brightness(.32) saturate(.45) contrast(1.1)}
+.tint{position:absolute;inset:0;background:#070b12;opacity:.35}
+.win{position:absolute;inset:0;z-index:1;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat}
+.win .hv{filter:saturate(1.08) contrast(1.05)}
+.hero-in{position:relative;z-index:2;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:80px 24px 110px}
+.hero-logo{width:min(980px,88vw);aspect-ratio:2194/365;position:relative}
+.hero-logo img{position:absolute;inset:0;width:100%;height:100%;opacity:.22;mix-blend-mode:screen}
+.tag{margin-top:36px;font-stretch:125%;font-weight:300;font-size:clamp(13px,1.5vw,21px);letter-spacing:.32em;padding-left:.32em;color:#d8dde5}
+.hero .btns{margin-top:46px;justify-content:center}
+.vp{position:absolute;z-index:4;right:32px;bottom:104px;width:44px;height:44px;border-radius:50%;display:grid;place-items:center;border:1px solid rgba(255,255,255,.35);color:#fff;transition:border-color .2s,background .2s}
+.vp:hover{border-color:#fff;background:rgba(255,255,255,.08)}
+.vp svg{width:14px;height:14px}
+.vp .i-play{display:none}.vp.paused .i-play{display:block}.vp.paused .i-pause{display:none}
+.strip{position:absolute;left:0;right:0;bottom:0;z-index:3;background:rgba(5,6,8,.7);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-top:1px solid rgba(255,255,255,.12)}
+.strip-in{display:flex;justify-content:center;max-width:1200px;margin:0 auto}
+.aw{display:flex;align-items:center;gap:16px;padding:22px 40px}
+.aw+.aw{border-left:1px solid rgba(255,255,255,.14)}
+.aw svg{width:26px;height:26px;flex:none;color:#c9ced6}
+.aw b{display:block;font-weight:600;font-size:17px;font-stretch:108%}
+.aw span{display:block;font-size:14px;color:rgba(255,255,255,.66);margin-top:2px}
+
+/* hakkımızda */
+.about-g{display:grid;grid-template-columns:6fr 6fr;gap:72px;align-items:center}
+.about-t h2{font-size:clamp(30px,3vw,44px)}
+.about-t .lead{margin-top:28px}
+.about-t p:last-child{margin-top:16px}
+.collage{position:relative;padding:0 0 64px 64px}
+.collage .c1{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:var(--r)}
+.collage .c2{position:absolute;left:0;bottom:0;width:36%;aspect-ratio:3/4;object-fit:cover;object-position:center 60%;border-radius:12px;border:6px solid var(--bg);box-shadow:0 30px 60px -20px rgba(0,0,0,.8)}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:32px;margin-top:96px}
+.facts>div{border-top:1px solid var(--line);padding-top:24px}
+.facts dt{font-size:14px;color:var(--mut)}
+.facts dd{margin-top:8px;font-size:19px;font-weight:500;line-height:1.35}
+.facts dd a{color:inherit;text-underline-offset:5px;text-decoration-color:var(--red)}
+
+/* vizyon misyon */
+.vm-box{position:relative;border-radius:24px;overflow:hidden;padding:88px 64px;isolation:isolate}
+.vm-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-1;transform:scale(1.04)}
+.vm-g{display:grid;grid-template-columns:1fr 20% 1fr;align-items:center}
+.vm-g .glass:last-child{grid-column:3}
+.glass{background:rgba(6,8,11,.58);-webkit-backdrop-filter:blur(20px) saturate(1.2);backdrop-filter:blur(20px) saturate(1.2);border:1px solid rgba(255,255,255,.16);border-radius:var(--r);padding:40px}
+.glass h3{font-size:26px}
+.glass p{margin-top:16px;color:#d3d8df}
+
+/* projeler ve dereceler */
+.sec-h{display:grid;grid-template-columns:5fr 7fr;gap:72px;align-items:end;margin-bottom:48px}
+.pr-g{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.pc{display:flex;flex-direction:column;text-decoration:none;background:var(--card);border:1px solid var(--line);border-radius:20px;overflow:hidden;transition:transform .35s ease,border-color .35s ease}
+.pc:hover{transform:translateY(-4px);border-color:var(--line2)}
+.pc-img{aspect-ratio:16/10;overflow:hidden}
+.pc-img img{width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.pc:hover .pc-img img{transform:scale(1.05)}
+.pc-t{padding:32px 32px 36px;display:flex;flex-direction:column;flex:1}
+.pc-t h3{font-size:30px;margin-top:20px}
+.pc-t p{margin-top:12px;font-size:17px}
+.more{margin-top:auto;padding-top:24px;font-weight:600;font-size:16px;text-decoration:underline;text-underline-offset:6px;text-decoration-thickness:1.5px}
+
+/* sahadan */
+.gal-g{display:grid;grid-template-columns:2fr 1fr 1fr;grid-template-rows:280px 280px;gap:16px;margin-top:48px}
+.gal-g img{width:100%;height:100%;object-fit:cover;border-radius:12px}
+.gal-g .g1{grid-row:1/3}
+.gal-g .g2{grid-row:1/3;object-position:center 30%}
+
+/* hedefler */
+.goals-g{display:grid;grid-template-columns:5fr 7fr;gap:72px}
+.road{display:grid;grid-template-columns:repeat(4,1fr);margin-top:40px;position:relative}
+.road::before{content:"";position:absolute;left:7px;right:12.5%;top:7px;height:2px;background:linear-gradient(90deg,var(--silver) 0 25%,rgba(255,255,255,.18) 25%)}
+.road li{position:relative;padding-top:32px;font-weight:600;font-size:16px;color:var(--mut)}
+.road li::before{content:"";position:absolute;left:0;top:0;width:16px;height:16px;border-radius:50%;border:2px solid rgba(255,255,255,.3);background:var(--bg)}
+.road li.on{color:var(--ink)}
+.road li.on::before{background:#fff;border-color:#fff}
+
+/* slogan */
+.quote{position:relative;margin-top:144px;min-height:600px;display:flex;align-items:center;overflow:hidden;isolation:isolate}
+.q-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 8%;filter:brightness(.28) saturate(.6);z-index:-1}
+.quote blockquote p{color:#fff;font-stretch:112%;font-weight:600;font-size:clamp(30px,4vw,58px);line-height:1.12;letter-spacing:-.015em;max-width:22ch}
+.quote cite{display:block;margin-top:28px;font-style:normal;font-size:16px;color:#c9ced6}
+
+/* akademi */
+.ak{padding:144px 0}
+.ak-g{display:grid;grid-template-columns:5fr 7fr;gap:72px;align-items:center}
+.ak-t .lead{margin-top:24px}
+.ak-t .btns{margin-top:36px}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:36px 36px 40px}
+.panel-h{display:flex;justify-content:space-between;align-items:baseline;gap:16px}
+.panel-h h3{font-size:20px}
+.panel-h span{font-size:14px;color:var(--mut)}
+.route{position:relative;height:150px;margin:30px 0 22px}
+.route svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.route path{fill:none;stroke:var(--silver);stroke-width:2;vector-effect:non-scaling-stroke}
+.route .opt{stroke:rgba(255,255,255,.3);stroke-dasharray:5 5}
+.dot{position:absolute;width:16px;height:16px;border-radius:50%;background:#fff;transform:translate(-50%,-50%);box-shadow:0 0 0 5px var(--card)}
+.dot.h{background:var(--card);border:2px solid #fff}
+.dot.r{background:var(--red)}
+.blab{position:absolute;left:50%;transform:translateX(-50%);font-size:13px;font-weight:600;white-space:nowrap;color:var(--mut)}
+.stops{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.stops li{text-align:center}
+.stops b{display:block;font-stretch:108%;font-weight:600;font-size:15px;line-height:1.25}
+.stops span{display:block;font-size:14px;color:var(--mut);margin-top:6px;line-height:1.35}
+
+/* çatı kulübü */
+.uask-k{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:56px;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:48px}
+.uask-k .etk{font:600 15px/1 'Saira',sans-serif;color:var(--red)}
+.uask-k .uask-lg{display:block;width:min(300px,100%);margin-top:24px}
+.uask-k .uye{display:flex;align-items:baseline;gap:12px;margin-top:40px;padding-top:24px;border-top:1px solid var(--line)}
+.uask-k .uye b{font:700 48px/1 'Saira',sans-serif}
+.uask-k .uye span{color:var(--mut);font-size:15px}
+.uask-k p{color:var(--mut)}
+.uask-k p+p{margin-top:16px}
+.uask-k h3{margin-top:32px;font-size:16px;font-weight:600;color:var(--mut)}
+.alan{display:flex;flex-wrap:wrap;gap:8px;list-style:none;margin:12px 0 0;padding:0}
+.alan li{border:1px solid var(--line2);border-radius:8px;padding:10px 16px;font:600 15px/1 'Saira',sans-serif}
+.alan li.biz{border-color:var(--red);background:rgba(227,18,27,.14)}
+.uask-not{margin-top:32px;border-left:3px solid var(--red);padding:4px 0 4px 16px;color:var(--ink)!important}
+
+/* iletişim ve alt bilgi */
+.foot{border-top:1px solid var(--line);padding:96px 0 56px}
+.ilt{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:24px 72px;padding-bottom:72px;margin-bottom:48px;border-bottom:1px solid var(--line)}
+.ilt-t .lead{margin-top:16px;color:var(--mut)}
+.kisiler{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.kisi{display:grid;gap:8px;align-content:start;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:28px}
+.kisi span{font-size:14px;color:var(--mut)}
+.kisi b{font:600 22px/1.2 'Saira',sans-serif;margin-bottom:8px}
+.kisi a{color:var(--ink);text-decoration:none;font-size:16px}
+.kisi a:hover{color:var(--red);text-decoration:underline;text-underline-offset:4px}
+.baglar{grid-column:2;list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.baglar span{display:block;font-size:14px;color:var(--mut);margin-bottom:6px}
+.baglar a{color:var(--ink);text-underline-offset:4px;font-size:16px;overflow-wrap:anywhere}
+.fg{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:40px;align-items:center}
+.foot .lg{width:230px}
+.foot h4{font-stretch:108%;font-weight:600;font-size:16px;margin-bottom:12px}
+.foot p{font-size:15px;line-height:1.7}
+.foot a{color:var(--ink);text-underline-offset:4px}
+.foot .uask{width:140px;margin-bottom:8px;opacity:.9}
+.foot .tel{color:var(--mut);font-size:14px}
+
+/* projeler sayfası */
+.ph{position:relative;height:calc(var(--hh,100vh) * .56);min-height:420px;display:flex;align-items:flex-end;overflow:hidden;isolation:isolate}
+.ph-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:brightness(.38) saturate(.7);z-index:-1}
+.ph .w{width:100%;padding-bottom:64px}
+.ph h1{font-size:clamp(40px,5.4vw,80px)}
+.ph p{margin-top:16px;color:#d3d8df;max-width:36em}
+.pj{padding:112px 0 0}
+.pj-g{display:grid;grid-template-columns:7fr 5fr;gap:64px;align-items:center}
+.pj:nth-of-type(even) .pj-g{grid-template-columns:5fr 7fr}
+.pj:nth-of-type(even) .media{order:2}
+.media{position:relative;display:block;aspect-ratio:16/9;border-radius:20px;overflow:hidden;background:var(--card)}
+.media img{width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.media:hover img{transform:scale(1.04)}
+.play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:80px;height:80px;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.94);color:#050608;transition:transform .25s}
+.media:hover .play{transform:translate(-50%,-50%) scale(1.06)}
+.play svg{width:24px;height:24px;margin-left:4px}
+.pj h2{margin-top:18px}
+.pj p{margin-top:16px}
+.note{display:flex;gap:10px;align-items:center;margin-top:24px!important;color:var(--ink)!important;font-weight:600;font-size:15px!important}
+.note::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--red);flex:none}
+.next{padding:112px 0 144px}
+.next .lead{border-top:1px solid var(--line);padding-top:48px}
+
+@media (max-width:900px){
+  .w{padding:0 20px}
+  .sec{padding-top:96px}
+  .nav .w{height:64px}
+  .nav nav{display:none}
+  .navbtn{display:grid}
+  .nav.open{background:rgba(6,8,11,.96)}
+  .nav.open nav{display:flex;flex-direction:column;gap:0;position:absolute;top:64px;left:0;right:0;background:rgba(6,8,11,.96);padding:8px 20px 16px;border-bottom:1px solid var(--line)}
+  .nav.open nav a{padding:14px 0}
+  .hero-in{padding:64px 16px 150px}
+  .hero-logo{width:92vw}
+  .tag{margin-top:26px;letter-spacing:.2em;padding-left:.2em;line-height:1.9}
+  .hero .btns{margin-top:30px;display:grid;grid-template-columns:1fr 1fr;gap:10px;width:100%;max-width:340px}
+  .hero .btns a{justify-content:center}
+  .hero .btns .b3{grid-column:1/3;order:-1}
+  .b1,.b2,.b3{min-height:50px;padding:0 24px;font-size:15px}
+  .nav.open nav a.nav-ak{border:0;margin:0;padding:14px 0;border-radius:0}
+  .vp{right:16px;bottom:146px}
+  .strip-in{flex-direction:column}
+  .aw{padding:14px 20px}
+  .aw+.aw{border-left:0;border-top:1px solid rgba(255,255,255,.12)}
+  .aw b{font-size:15px}.aw span{font-size:13px}
+  .about-g,.sec-h,.goals-g,.ak-g,.pj-g,.pj:nth-of-type(even) .pj-g,.fg{grid-template-columns:1fr;gap:32px}
+  .pj:nth-of-type(even) .media{order:0}
+  .collage{padding:0 0 40px 40px}
+  .facts{grid-template-columns:1fr 1fr;gap:24px;margin-top:56px}
+  .uask-k,.ilt{grid-template-columns:1fr;gap:32px}
+  .uask-k{padding:28px 22px}
+  .kisiler,.baglar{grid-template-columns:1fr}
+  .baglar{grid-column:auto}
+  .vm-box{padding:0;border-radius:18px;background:var(--card);border:1px solid var(--line)}
+  .vm-bg{position:static;height:220px;transform:none}
+  .vm-g{grid-template-columns:1fr;gap:12px;padding:12px}
+  .vm-g .glass:last-child{grid-column:auto}
+  .glass{padding:26px 22px;background:rgba(255,255,255,.03);-webkit-backdrop-filter:none;backdrop-filter:none;border-color:var(--line)}
+  .sec-h{margin-bottom:28px;gap:14px}
+  .pr-g{grid-template-columns:1fr;gap:20px}
+  .pc-t{padding:24px 22px 28px}
+  .pc-t h3{font-size:26px}
+  .gal-g{grid-template-columns:1fr 1fr;grid-template-rows:200px 240px 160px;gap:10px;margin-top:28px}
+  .gal-g .g1{grid-column:1/3;grid-row:auto}
+  .gal-g .g2{grid-row:2/4}
+  .road li{font-size:14px}
+  .quote{margin-top:96px;min-height:480px}
+  .q-bg{height:190%;object-position:center top}
+  .ak{padding:96px 0}
+  .panel{padding:24px 20px}
+  .route{display:none}
+  .stops{grid-template-columns:1fr;gap:0;margin-top:22px}
+  .stops li{text-align:left;position:relative;padding:0 0 22px 30px;border-left:2px solid var(--silver);margin-left:7px}
+  .stops li:last-child{border-left-color:transparent}
+  .stops li::before{content:"";position:absolute;left:-9px;top:0;width:16px;height:16px;border-radius:50%;background:#fff}
+  .stops li:first-child::before{background:var(--card);border:2px solid #fff}
+  .stops li.br::before{background:var(--red)}
+  .stops span{margin-top:2px}
+  .foot{padding:56px 0 40px}
+  .ph{height:calc(var(--hh,100vh) * .46);min-height:360px}
+  .ph .w{padding-bottom:40px}
+  .pj{padding-top:72px}
+  .next{padding:72px 0 96px}
+}
+/* ekran görüntüsü kipi (?shot=1): test için */
+html.shot body{background:#ff00ff}
+html.shot .site{background:var(--bg)}
+html.shot .nav{position:absolute}
+html.shot .rv{opacity:1;transform:none;transition:none}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.rv{opacity:1;transform:none}*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body data-p="home">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-pause" viewBox="0 0 16 16"><rect x="3" y="2" width="3.5" height="12" fill="currentColor"/><rect x="9.5" y="2" width="3.5" height="12" fill="currentColor"/></symbol>
+  <symbol id="i-play" viewBox="0 0 16 16"><path d="M4 2 L14 8 L4 14 Z" fill="currentColor"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 22 22"><path d="M2 6h18M2 11h18M2 16h18" stroke="currentColor" stroke-width="2" fill="none"/></symbol>
+  <symbol id="i-cap" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21.42 10.92a1 1 0 0 0-.02-1.84L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.83l8.57 3.91a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></g></symbol>
+  <symbol id="i-award" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.48 12.89 17 22l-5-3-5 3 1.52-9.11"/></g></symbol>
+</svg>
+
+<div class="site">
+<header class="nav">
+  <div class="w">
+    <a class="nav-logo" href="#" aria-label="Ana sayfa"><img src="medya/logo-beyaz.png" alt="SKYVIUS"></a>
+    <nav aria-label="Ana menü">
+      <a href="#hakkimizda">Hakkımızda</a>
+      <a href="#projelerimiz" data-proj>Projeler</a>
+      <a class="nav-ak" href="akademi/">Akademi</a>
+      <a href="#iletisim">İletişim</a>
+    </nav>
+    <button class="navbtn" aria-label="Menüyü aç" aria-expanded="false"><svg><use href="#i-menu"/></svg></button>
+  </div>
+</header>
+
+<main class="pg pg-home">
+  <section class="hero">
+    <video class="hv bg" poster="medya/karsilama-kare.jpg" muted loop playsinline preload="none" aria-hidden="true"></video>
+    <div class="tint" aria-hidden="true"></div>
+    <div class="win" aria-hidden="true"><video class="hv fg" poster="medya/karsilama-kare.jpg" muted loop playsinline preload="none"></video></div>
+    <div class="hero-in">
+      <h1 class="hero-logo"><img src="medya/logo-beyaz.png" alt="SKYVIUS"></h1>
+      <p class="tag">GÖRÜNTÜ İŞLEME TABANLI OTONOM SİSTEMLER</p>
+      <div class="btns"><a class="b1" href="#projelerimiz">Projelerimiz</a><a class="b3" href="akademi/"><svg aria-hidden="true"><use href="#i-cap"/></svg>Akademi</a><a class="b2" href="#hakkimizda">Hakkımızda</a></div>
+    </div>
+    <button class="vp" aria-label="Videoyu durdur"><svg class="i-pause"><use href="#i-pause"/></svg><svg class="i-play"><use href="#i-play"/></svg></button>
+    <div class="strip"><div class="strip-in">
+      <div class="aw"><svg aria-hidden="true"><use href="#i-award"/></svg><div><b>TEKNOFEST 2026 Türkiye ikincisi</b><span>FPV Drone İzleme</span></div></div>
+      <div class="aw"><svg aria-hidden="true"><use href="#i-award"/></svg><div><b>En İyi Takım Ruhu Ödülü</b><span>TEKNOFEST 2026 Savaşan İHA</span></div></div>
+    </div></div>
+  </section>
+
+  <section id="hakkimizda" class="sec">
+    <div class="w about-g">
+      <div class="about-t rv">
+        <h2>İHA platformları için görüntü işleme tabanlı otonom sistemler geliştiriyoruz.</h2>
+        <p class="lead">Skyvius 2025'te kuruldu ve 2026'dan itibaren Yıldız Teknik Üniversitesi Uzay ve Aviyonik Sistemler Kulübü (UASK) çatısı altında çalışıyor.</p>
+        <p>Bir hedefi kamerayla bulan, ona kilitlenen ve insan müdahalesi olmadan takip eden sistemleri tasarımdan sahaya kadar kendimiz kuruyoruz.</p>
+      </div>
+      <div class="collage rv">
+        <img class="c1" src="medya/takim-sahne.jpg" loading="lazy" decoding="async" alt="Skyvius takımı TEKNOFEST 2026'da, FPV Drone İzleme ikincilik ödülüyle">
+        <img class="c2" src="medya/plaket.jpg" loading="lazy" decoding="async" alt="TEKNOFEST 2026 ödül plaketi">
+      </div>
+    </div>
+    <dl class="w facts rv">
+      <div><dt>Kuruluş</dt><dd>2025</dd></div>
+      <div><dt>Çatı kulübümüz</dt><dd><a href="#uask">YTÜ Uzay ve Aviyonik Sistemler Kulübü</a></dd></div>
+      <div><dt>Birimler</dt><dd>Yazılım, aviyonik ve mekanik</dd></div>
+      <div><dt>İlk sezon</dt><dd>İki TEKNOFEST yarışması, iki ödül</dd></div>
+    </dl>
+  </section>
+
+  <section id="uask" class="sec">
+    <div class="w">
+      <div class="uask-k rv">
+        <div>
+          <span class="etk">Çatı kulübümüz</span>
+          <img class="uask-lg" src="medya/uask.png" loading="lazy" decoding="async" alt="UASK, Uzay ve Aviyonik Sistemler Kulübü">
+          <div class="uye"><b>700+</b><span>üye</span></div>
+        </div>
+        <div>
+          <p>Uzay ve Aviyonik Sistemler Kulübü, Yıldız Teknik Üniversitesi'nin "Uzay ve Havacılık" idealleri çerçevesinde projeler geliştiren, 700'ü aşkın üyeye sahip bir öğrenci kulübüdür.</p>
+          <p>Döner kanat ve sabit kanat İHA takımlarına bu yıl katılan yeni takımlarla faaliyetlerini genişleten kulüp; ulusal ve uluslararası arenada üniversitemizi ve ülkemizi temsil etmeyi, havacılık ve uzay teknolojilerinde Ar-Ge odaklı projeler geliştirmeyi hedeflemektedir.</p>
+          <h3>Kulübün takım alanları</h3>
+          <ul class="alan"><li>Döner kanat İHA</li><li>Sabit kanat İHA</li><li>Model uydu</li><li class="biz">Skyvius</li></ul>
+          <p class="uask-not"><b>Skyvius</b>, 2026 yılından itibaren UASK çatısı altında faaliyet göstermektedir.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="w">
+      <div class="vm-box rv">
+        <img class="vm-bg" src="medya/drone-gokyuzu.jpg" loading="lazy" decoding="async" alt="">
+        <div class="vm-g">
+          <div class="glass"><h3>Vizyon</h3><p>Kritik teknolojileri dışarıdan satın alan değil, kendisi tasarlayıp üreten bir Türkiye'nin parçası olmak. Milli Teknoloji Hamlesi'ni uzaktan izlediğimiz bir hedef değil, içinde yetiştiğimiz bir süreç olarak görüyor; bu sürece görüntü işleme tabanlı otonom sistemlerde yerli ve sahada sınanmış çözümlerle katkı sunmayı amaçlıyoruz.</p></div>
+          <div class="glass"><h3>Misyon</h3><p>Yarışmaları, teknolojimizi gerçek görev koşullarında sınadığımız sahalar olarak kullanmak. Her üyenin tasarımdan sahaya kadar sorumluluk aldığı, ölçerek ve belgeleyerek ilerleyen bir mühendislik kültürü kurmak.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="w">
+      <div class="sec-h rv"><h2>Projeler ve dereceler</h2><p class="lead">İlk sezonumuzda katıldığımız iki TEKNOFEST yarışmasından da ödülle döndük.</p></div>
+      <div class="pr-g">
+        <a class="pc rv" href="#projelerimiz">
+          <div class="pc-img"><img src="medya/iki-drone.jpg" loading="lazy" decoding="async" alt=""></div>
+          <div class="pc-t">
+            <span><span class="badge"><svg aria-hidden="true"><use href="#i-award"/></svg>Türkiye ikincisi</span></span>
+            <h3>FPV Drone İzleme</h3>
+            <p>Başka bir İHA'yı yalnızca görüntüyle bulup otonom olarak takip eden sistem. Ön tasarımda 61 takım arasında birinci olduk.</p>
+            <span class="more">Projeyi incele</span>
+          </div>
+        </a>
+        <a class="pc rv" href="#projelerimiz">
+          <div class="pc-img"><img src="medya/savasan-tabela.jpg" loading="lazy" decoding="async" alt=""></div>
+          <div class="pc-t">
+            <span><span class="badge"><svg aria-hidden="true"><use href="#i-award"/></svg>En İyi Takım Ruhu Ödülü</span></span>
+            <h3>Avcı Drone</h3>
+            <p>Hedef İHA'ya kamerayla kilitlenip fiziksel olarak angaje olan otonom bir önleyici İHA.</p>
+            <span class="more">Projeyi incele</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="w"><h2 class="rv">Sahadan</h2></div>
+    <div class="w gal-g rv">
+      <img class="g1" src="medya/fpv-takim.jpg" loading="lazy" decoding="async" alt="Takım FPV Drone İzleme ikincilik çekiyle">
+      <img class="g2" src="medya/kaptan.jpg" loading="lazy" decoding="async" alt="Takım kaptanı ödül çekiyle">
+      <img class="g3" src="medya/savasan-cadir.jpg" loading="lazy" decoding="async" alt="Takım Savaşan İHA yarışma çadırında">
+      <img class="g4" src="medya/yarisma-alani.jpg" loading="lazy" decoding="async" alt="Yarışma alanında uçan İHA'lar">
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="w goals-g">
+      <h2 class="rv">Hedeflerimiz</h2>
+      <div class="rv">
+        <p class="lead">2027'de derece aldığımız iki yarışmada çıtayı yükseltmek, Uluslararası İHA ve Sürü İHA yarışmalarına da ilk kez katılmak istiyoruz.</p>
+        <p>Uzun vadede sahada sınadığımız sistemleri Ar-Ge ile ürüne, oradan da havacılık ve savunmaya yerli çözümler sunabilecek bir teknoloji girişimine taşımayı hedefliyoruz.</p>
+        <ol class="road"><li class="on">Yarışma</li><li>Ar-Ge</li><li>Ürün</li><li>Girişim</li></ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="quote">
+    <img class="q-bg" src="medya/takim-cek.jpg" loading="lazy" decoding="async" alt="">
+    <div class="w rv"><blockquote><p>Teknolojiyi üreten ülke olmanın yolu, önce onu üretecek insanı yetiştirmekten geçer.</p><cite>Milli Teknoloji Hamlesi'ne bakışımız</cite></blockquote></div>
+  </section>
+
+  <section id="akademi" class="ak">
+    <div class="w ak-g">
+      <div class="ak-t rv">
+        <h2>Skyvius Akademi</h2>
+        <p class="lead">Bildiklerimizi herkese açık ve ücretsiz bir eğitimle paylaşıyoruz.</p>
+        <p>Python'dan gerçek donanıma 27 modül. Her modülde konu anlatımı, videolar, kod örnekleri ve görevler var. Kendi hızında ilerlersin.</p>
+        <div class="btns"><a class="b1" href="akademi/">Akademiye git</a><a class="b2" href="akademi/#harita">Yol haritası</a></div>
+      </div>
+      <div class="panel rv">
+        <div class="panel-h"><h3>Yol haritası</h3><span>5 aşama, 27 modül</span></div>
+        <div class="route" aria-hidden="true">
+          <svg viewBox="0 0 1000 150" preserveAspectRatio="none">
+            <path class="opt" d="M100 75 H300"/>
+            <path d="M300 75 C370 75 380 24 440 24 H560 C620 24 630 75 700 75"/>
+            <path d="M300 75 C370 75 380 126 440 126 H560 C620 126 630 75 700 75"/>
+            <path d="M700 75 H900"/>
+          </svg>
+          <span class="dot h" style="left:10%;top:50%"></span>
+          <span class="dot" style="left:30%;top:50%"></span>
+          <span class="dot r" style="left:50%;top:16%"></span>
+          <span class="dot r" style="left:50%;top:84%"></span>
+          <span class="dot" style="left:70%;top:50%"></span>
+          <span class="dot" style="left:90%;top:50%"></span>
+          <span class="blab" style="top:40px">Otonom</span>
+          <span class="blab" style="bottom:40px">Görüntü işleme</span>
+        </div>
+        <ol class="stops">
+          <li><b>Python hazırlığı</b><span>İsteğe bağlı</span></li>
+          <li><b>Ortak İHA temeli</b><span>Simülasyonda ilk uçuş</span></li>
+          <li class="br"><b>Uzmanlık dalı</b><span>Otonom ya da görüntü işleme</span></li>
+          <li><b>Entegrasyon</b><span>Görüntüyle hedef takibi</span></li>
+          <li><b>Gerçek donanım</b><span>Jetson ve Pixhawk</span></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+</main>
+
+<main class="pg pg-proj">
+  <section class="ph">
+    <img class="ph-bg" src="medya/iki-drone.jpg" alt="">
+    <div class="w"><h1>Projelerimiz</h1><p class="lead">İlk sezonumuzda katıldığımız iki TEKNOFEST yarışmasından da ödülle döndük.</p></div>
+  </section>
+  <article class="pj">
+    <div class="w pj-g">
+      <div class="media rv" role="img" aria-label="FPV Drone İzleme videosu yakında eklenecek"><img src="medya/fpv-takip.jpg" loading="lazy" decoding="async" alt=""><span class="play" aria-hidden="true"><svg><use href="#i-play"/></svg></span></div>
+      <div class="rv">
+        <span class="badge"><svg aria-hidden="true"><use href="#i-award"/></svg>Türkiye ikincisi, TEKNOFEST 2026</span>
+        <h2>FPV Drone İzleme</h2>
+        <p>Hedef İHA'yı kamerayla bulup ona kilitlenen, ardından kontrolü pilottan devralıp tamamen otonom uçan bir takip sistemi geliştirdik.</p>
+        <p>GPS kullanmadan 11 farklı manevra yapan hedefi insan müdahalesi olmadan kesintisiz takip ettik. Ön tasarımda 61 takım arasında birinci olduk.</p>
+        <p class="note">Makale ve patent süreci devam ediyor.</p>
+      </div>
+    </div>
+  </article>
+  <article class="pj">
+    <div class="w pj-g">
+      <div class="media rv" role="img" aria-label="Avcı Drone videosu yakında eklenecek"><img src="medya/savasan-cadir.jpg" loading="lazy" decoding="async" alt=""><span class="play" aria-hidden="true"><svg><use href="#i-play"/></svg></span></div>
+      <div class="rv">
+        <span class="badge"><svg aria-hidden="true"><use href="#i-award"/></svg>En İyi Takım Ruhu Ödülü, TEKNOFEST 2026</span>
+        <h2>Avcı Drone</h2>
+        <p>Elektronik harp nedeniyle konum verisi bozulduğunda bile hedef bölgeye otonom ulaşan bir önleyici İHA geliştirdik.</p>
+        <p>Sistem hedef İHA'yı kamerayla bulup görüntü üzerinden kilitleniyor, ardından mesafeyi kapatarak hedefe fiziksel olarak angaje oluyor.</p>
+      </div>
+    </div>
+  </article>
+  <section class="next"><div class="w rv"><p class="lead">2027'de iki yarışmada derece hedefiyle yeniden sahadayız. Uluslararası İHA ve Sürü İHA yarışmalarına da ilk kez katılmayı hedefliyoruz.</p></div></section>
+</main>
+
+<footer id="iletisim" class="foot">
+  <div class="w">
+    <div class="ilt">
+      <div class="ilt-t"><h2>İletişim</h2><p class="lead">Sponsorluk, iş birliği ya da akademi için bize yazın.</p></div>
+      <div class="kisiler">
+        <div class="kisi"><span>Takım kaptanı</span><b>Enes Durudeniz</b><a href="tel:+905343260204">+90 534 326 02 04</a><a href="mailto:enesdurudeniz9@gmail.com">enesdurudeniz9@gmail.com</a></div>
+        <div class="kisi"><span>Başkan yardımcısı</span><b>Muhammet Taha Ayyıldız</b><a href="tel:+905443617041">+90 544 361 70 41</a><a href="mailto:mtayyildiz14@gmail.com">mtayyildiz14@gmail.com</a></div>
+      </div>
+      <ul class="baglar">
+        <li><span>Web sitesi</span><a href="https://akademi.skyvius.com.tr">akademi.skyvius.com.tr</a></li>
+        <li><span>LinkedIn</span><a href="https://www.linkedin.com/company/skyvius-aerospace/" target="_blank" rel="noopener">Skyvius Aerospace</a></li>
+        <li><span>Instagram</span><a href="https://www.instagram.com/skyvius.aerospace/" target="_blank" rel="noopener">@skyvius.aerospace</a></li>
+      </ul>
+    </div>
+    <div class="fg">
+      <img class="lg" src="medya/logo-yazili.png" loading="lazy" decoding="async" alt="SKYVIUS, Vision Integrated Unmanned Systems">
+      <div><img class="uask" src="medya/uask.png" loading="lazy" decoding="async" alt="YTÜ Uzay ve Aviyonik Sistemler Kulübü"><p class="tel">Yıldız Teknik Üniversitesi, İstanbul</p></div>
+      <p class="tel">© 2026 Skyvius</p>
+    </div>
+  </div>
+</footer>
+</div>
+
+
+<script>
+(function(){
+  var Q = new URLSearchParams(location.search), SHOT = Q.has('shot'), root = document.documentElement;
+  if (SHOT) root.classList.add('shot');
+  if (Q.get('hh')) root.style.setProperty('--hh', Q.get('hh') + 'px');
+  var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var LOGO = 'medya/logo-beyaz.png', VIDEO = 'medya/karsilama.mp4';
+
+  /* logo biçimli pencereyi logonun yerine oturt */
+  var hero = document.querySelector('.hero'), win = hero.querySelector('.win'), logo = hero.querySelector('.hero-logo');
+  function placeWindow(){
+    var r = hero.getBoundingClientRect(), s = logo.getBoundingClientRect();
+    if (!s.width) return;
+    win.style.webkitMaskImage = win.style.maskImage = 'url("' + LOGO + '")';
+    win.style.webkitMaskSize = win.style.maskSize = s.width + 'px ' + s.height + 'px';
+    win.style.webkitMaskPosition = win.style.maskPosition = (s.left - r.left) + 'px ' + (s.top - r.top) + 'px';
+  }
+  addEventListener('resize', placeWindow);
+  logo.querySelector('img').addEventListener('load', placeWindow);
+  if (document.fonts) document.fonts.ready.then(placeWindow);
+
+  /* video: iki kopya aynı karede; ekran dışında ve projeler sayfasında durur; hareket azaltılmışsa hiç yüklenmez */
+  var bg = hero.querySelector('video.bg'), fg = hero.querySelector('video.fg'), vids = [bg, fg], vp = hero.querySelector('.vp');
+  var page = 'home', userPaused = reduce, visible = true;
+  function sync(){
+    if (SHOT) return;
+    var run = page === 'home' && visible && !userPaused;
+    vids.forEach(function(v){
+      if (run && !v.getAttribute('src')) v.src = VIDEO;
+      if (run) v.play().catch(function(){}); else v.pause();
+    });
+  }
+  bg.addEventListener('timeupdate', function(){ if (Math.abs(fg.currentTime - bg.currentTime) > .08) fg.currentTime = bg.currentTime; });
+  function setBtn(){ vp.classList.toggle('paused', userPaused); vp.setAttribute('aria-label', userPaused ? 'Videoyu oynat' : 'Videoyu durdur'); }
+  vp.addEventListener('click', function(){ userPaused = !userPaused; setBtn(); sync(); });
+  setBtn();
+
+  /* menü: kaydırınca katılaşır */
+  var nav = document.querySelector('.nav');
+  function navState(){ nav.classList.toggle('solid', page !== 'home' || scrollY > 40); }
+  addEventListener('scroll', navState, {passive: true});
+  var nb = document.querySelector('.navbtn');
+  nb.addEventListener('click', function(){
+    var on = nav.classList.toggle('open'); nb.setAttribute('aria-expanded', on); nb.setAttribute('aria-label', on ? 'Menüyü kapat' : 'Menüyü aç');
+  });
+
+  /* kaydırınca beliren bölümler */
+  if ('IntersectionObserver' in window && !SHOT && !reduce) {
+    var io = new IntersectionObserver(function(es){ es.forEach(function(e){ if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }); }, {rootMargin: '0px 0px -8% 0px'});
+    document.querySelectorAll('.rv').forEach(function(el){ io.observe(el); });
+    new IntersectionObserver(function(es){ visible = es[0].isIntersecting; sync(); }).observe(hero);
+  } else document.querySelectorAll('.rv').forEach(function(el){ el.classList.add('in'); });
+
+  /* sayfalar: #projelerimiz ayrı sayfa, diğer adresler ana sayfadaki bölümler */
+  function apply(){
+    page = location.hash === '#projelerimiz' ? 'projeler' : 'home';
+    document.body.dataset.p = page;
+    document.title = page === 'projeler' ? 'Projelerimiz | Skyvius' : 'Skyvius';
+    var pl = document.querySelector('[data-proj]');
+    if (page === 'projeler') pl.setAttribute('aria-current', 'page'); else pl.removeAttribute('aria-current');
+    var id = location.hash.slice(1), t = page === 'home' && id && document.getElementById(id);
+    if (t) t.scrollIntoView(); else scrollTo({top: 0, left: 0, behavior: 'instant'});
+    nav.classList.remove('open'); navState(); placeWindow(); sync();
+  }
+  addEventListener('hashchange', apply);
+  apply();
+  if (Q.has('check')) setTimeout(function(){
+    document.title = 'CHECK ' + JSON.stringify(vids.map(function(x){ return {rs: x.readyState, t: +x.currentTime.toFixed(2), paused: x.paused}; }));
+  }, 4000);
+})();
+</script>
+</body>
+</html>
